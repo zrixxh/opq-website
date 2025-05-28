@@ -1,41 +1,43 @@
-# OPQ Discord Server Website
+# 🚀 OPQ Discord Server Website
 
-Welcome to the OPQ Discord Server Website repository! This is a simple, modern, and stylish website designed to showcase the OPQ Discord community. It features a dark futuristic theme with easy navigation and a live-style "Members Online" indicator.
-
----
-
-## Features
-
-- **Responsive Design:** The site adapts well to different screen sizes.
-- **Dark Futuristic Theme:** Uses a radial gradient background with neon colors.
-- **Navigation Bar:** Links to Home, Info, and Social pages.
-- **Member Count:** Displays a fake live member count ("800+") with a red flashing bot indicator.
-- **User Reviews:** Section with sample user reviews and star ratings.
-- **Social Links:** Quick access logos linking to GitHub, Discord, and Twitter.
-- **Accessible:** Includes ARIA labels for better accessibility.
+Welcome to the **OPQ Discord Server Website** — a sleek, modern, and futuristic portal for the OPQ community! This website highlights everything OPQ stands for: gaming, creativity, innovation, and connection.
 
 ---
 
-## Pages
+## ✨ Features
 
-- `index.html` — The home page introducing the OPQ community.
-- `info.html` — Information about the server (to be customized).
-- `social.html` — Links to YouTube, Twitter, Kick, and TikTok social media pages (to be customized).
-
----
-
-## Technologies Used
-
-- **HTML5**
-- **CSS3**
-- Google Fonts (Orbitron)
-- No JavaScript or backend required — purely static site.
+- **Responsive & Modern Design:** Clean dark theme with neon accents for that futuristic vibe.
+- **Intuitive Navigation:** Easy access to Home, Info, and Social pages.
+- **Live-Style Member Count:** Shows "800+" members online with a subtle red flashing bot indicator.
+- **Realistic User Reviews:** Engaging 1-to-5 star feedback to build trust and community feel.
+- **Social Media Integration:** Quick links to GitHub, Discord, Twitter, YouTube, Kick, and TikTok.
+- **Accessible:** Uses ARIA labels and semantic HTML for better accessibility and SEO.
+- **Lightweight & Static:** No backend needed — just plain HTML and CSS for fast loading.
 
 ---
 
-## Setup and Usage
+## 🌐 Pages Included
 
-1. **Clone the repository:**
+| Page        | Description                          |
+|-------------|------------------------------------|
+| `index.html`  | Welcome page with community intro and user reviews. |
+| `info.html`   | Detailed info about the OPQ server, rules, and benefits. |
+| `social.html` | Links to all official social media channels.           |
+
+---
+
+## 🎨 Design & Tech Stack
+
+- **HTML5 & CSS3** — Simple, semantic, and clean code.
+- **Google Fonts:** Orbitron for that techy, digital look.
+- **No JavaScript Dependencies:** Minimalistic and easy to maintain.
+- **Flashing Bot Indicator:** Custom CSS animation for live vibe.
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone this repo:**
 
    ```bash
    git clone https://github.com/yourusername/opq-discord-website.git
