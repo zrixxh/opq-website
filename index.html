@@ -119,39 +119,23 @@
       font-weight: 700;
     }
 
-    /* RED FLASHING BOT CIRCLE */
+    /* SIMPLE RED FLASHING BOT */
     .bot-flash {
       width: 24px;
       height: 24px;
       background-color: #ff0000;
       border-radius: 50%;
-      position: relative;
-      box-shadow: 0 0 8px 2px #ff0000;
+      box-shadow: 0 0 10px 2px #ff0000;
       animation: flash-red 1.5s infinite alternate;
-    }
-
-    .bot-flash::before {
-      content: '';
-      position: absolute;
-      top: 6px;
-      left: 7px;
-      width: 10px;
-      height: 6px;
-      background: black;
-      border-radius: 2px;
-      box-shadow:
-        4px 0 black,
-        0 2px black,
-        4px 2px black;
     }
 
     @keyframes flash-red {
       0% {
-        box-shadow: 0 0 8px 2px #ff0000;
+        box-shadow: 0 0 10px 2px #ff0000;
         opacity: 1;
       }
       100% {
-        box-shadow: 0 0 15px 6px #ff4444;
+        box-shadow: 0 0 20px 6px #ff4444;
         opacity: 0.6;
       }
     }
