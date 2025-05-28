@@ -6,7 +6,6 @@
   <title>OPQ Discord Server</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
   <style>
-    /* Same styles as before, plus nav styles */
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
@@ -36,7 +35,8 @@
       transition: color 0.3s;
     }
 
-    nav a:hover, nav a.active {
+    nav a:hover,
+    nav a.active {
       color: #00ccaa;
     }
 
@@ -60,6 +60,7 @@
       justify-content: center;
       text-align: center;
       padding: 4rem 2rem;
+      max-width: 800px;
     }
 
     .hero h2 {
@@ -84,21 +85,12 @@
       font-size: 1rem;
       cursor: pointer;
       transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
     }
 
     .button:hover {
       background: #00ccaa;
-    }
-
-    footer {
-      margin-top: auto;
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-      width: 100%;
-      background: #111;
-      border-top: 2px solid #00ffcc;
     }
 
     .logos {
@@ -119,24 +111,31 @@
 
     .member-count {
       margin-top: 2rem;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       color: #00ffcc;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
     }
 
-    .bot-indicator {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      margin-left: 8px;
-      border-radius: 50%;
-      background: #00ffcc;
-      animation: flash 1.5s infinite;
-      vertical-align: middle;
+    .bot-flash {
+      width: 24px;
+      height: 24px;
+      background: url('https://cdn-icons-png.flaticon.com/512/5968/5968764.png') no-repeat center center;
+      background-size: contain;
+      animation: flash 1.5s infinite alternate;
     }
 
     @keyframes flash {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.2; }
+      0% {
+        filter: drop-shadow(0 0 3px #00ffcc);
+        opacity: 1;
+      }
+      100% {
+        filter: drop-shadow(0 0 10px #00ffcc);
+        opacity: 0.5;
+      }
     }
 
     .reviews {
@@ -161,12 +160,24 @@
       color: #FFD700;
       font-size: 1.2rem;
     }
+
+    footer {
+      margin-top: auto;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      width: 100%;
+      background: #111;
+      border-top: 2px solid #00ffcc;
+    }
   </style>
 </head>
 <body>
   <nav>
     <a href="index.html" class="active">Home</a>
     <a href="info.html">Info</a>
+    <a href="social.html">Social</a>
   </nav>
 
   <header>
@@ -176,11 +187,9 @@
   <section class="hero">
     <h2>Elite Discord Community</h2>
     <p>OPQ is a high-tier Discord server for gamers, creators, and developers. From GTA RP to AI tools, we've got a community that thrives on innovation and fun.</p>
-    <a href="https://discord.gg/opq" target="_blank" rel="noopener noreferrer">
-      <button class="button">Join Now</button>
-    </a>
+    <a href="https://discord.gg/opq" target="_blank" rel="noopener noreferrer" class="button">Join Now</a>
 
-    <div class="logos">
+    <div class="logos" aria-label="Links">
       <a href="https://github.com/zrixxh" target="_blank" rel="noopener noreferrer">
         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
       </a>
@@ -192,13 +201,11 @@
       </a>
     </div>
 
-    <div class="member-count">
-      Members Online: 
-      <span id="memberCount">Over 800+</span>
-      <span class="bot-indicator"></span>
+    <div class="member-count" aria-label="Member Count">
+      Members Online: <span>800+</span> <div class="bot-flash" title="Bot is online"></div>
     </div>
 
-    <div class="reviews">
+    <div class="reviews" aria-label="User Reviews">
       <h2>User Reviews</h2>
       <div class="review">
         <div class="stars">★★★★★</div>
