@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Social Links - OPQ</title>
+  <title>Social - OPQ Discord Server</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -15,6 +15,7 @@
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
+      padding: 0 1rem;
     }
 
     nav {
@@ -35,7 +36,8 @@
       transition: color 0.3s;
     }
 
-    nav a:hover, nav a.active {
+    nav a:hover,
+    nav a.active {
       color: #00ccaa;
     }
 
@@ -45,6 +47,7 @@
       text-align: center;
       background: #111;
       border-bottom: 2px solid #00ffcc;
+      margin-bottom: 2rem;
     }
 
     header h1 {
@@ -53,14 +56,18 @@
     }
 
     main {
-      padding: 3rem 2rem;
       max-width: 600px;
+      background: #111;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #00ffcc44;
+      color: #aaffee;
       text-align: center;
     }
 
     main h2 {
       font-size: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       color: #fff;
     }
 
@@ -68,21 +75,21 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      font-size: 1.3rem;
+      margin-top: 2rem;
     }
 
     .social-links a {
       display: flex;
       align-items: center;
       gap: 15px;
-      padding: 12px 20px;
-      background: #111;
-      border: 2px solid #00ffcc;
-      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.3rem;
       color: #00ffcc;
       text-decoration: none;
+      padding: 0.6rem 1rem;
+      border: 2px solid #00ffcc;
+      border-radius: 10px;
       transition: background 0.3s, color 0.3s;
-      font-weight: 700;
       justify-content: center;
     }
 
@@ -91,10 +98,22 @@
       color: #000;
     }
 
-    .social-icon {
-      width: 28px;
-      height: 28px;
-      filter: invert(62%) sepia(92%) saturate(2972%) hue-rotate(152deg) brightness(102%) contrast(102%);
+    .social-links img {
+      width: 32px;
+      height: 32px;
+      filter: drop-shadow(0 0 2px #00ffcc);
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      width: 100%;
+      background: #111;
+      border-top: 2px solid #00ffcc;
+      margin-top: 3rem;
     }
   </style>
 </head>
@@ -110,27 +129,27 @@
   </header>
 
   <main>
-    <h2>Connect with us!</h2>
-    <div class="social-links">
-      <a href="https://www.youtube.com/@COD-hope" target="_blank" rel="noopener noreferrer">
-        <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
-        YouTube - COD-hope
+    <h2>Stay Connected</h2>
+    <div class="social-links" role="list">
+      <a href="https://www.youtube.com/@COD-hope" target="_blank" rel="noopener noreferrer" role="listitem">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+        YouTube
       </a>
-      <a href="https://x.com/ukrichboi" target="_blank" rel="noopener noreferrer">
-        <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
-        Twitter - ukrichboi
+      <a href="https://x.com/ukrichboi" target="_blank" rel="noopener noreferrer" role="listitem">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
+        Twitter
       </a>
-      <a href="https://kick.com/zrixxxh" target="_blank" rel="noopener noreferrer">
-        <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Kick_Icon.svg" alt="Kick" />
-        Kick - zrixxxh
+      <a href="https://kick.com/zrixxxh" target="_blank" rel="noopener noreferrer" role="listitem">
+        <img src="https://kick.com/favicon.ico" alt="Kick" style="width:24px;height:24px;filter:none;" />
+        Kick
       </a>
-      <a href="https://www.tiktok.com/@cj..mp4" target="_blank" rel="noopener noreferrer">
-        <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png" alt="TikTok" />
-        TikTok - cj..mp4
+      <a href="https://www.tiktok.com/@cj..mp4" target="_blank" rel="noopener noreferrer" role="listitem">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" />
+        TikTok (@cj..mp4)
       </a>
-      <a href="https://www.tiktok.com/@ukrichboi" target="_blank" rel="noopener noreferrer">
-        <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png" alt="TikTok" />
-        TikTok - ukrichboi
+      <a href="https://www.tiktok.com/@ukrichboi" target="_blank" rel="noopener noreferrer" role="listitem">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" />
+        TikTok (@ukrichboi)
       </a>
     </div>
   </main>
@@ -140,4 +159,3 @@
   </footer>
 </body>
 </html>
-
